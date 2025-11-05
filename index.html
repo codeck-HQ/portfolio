@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeckHQ — Modern Web Solutions</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand-1:#0d6efd;
+      --brand-2:#6610f2;
+      --muted:#6c757d;
+      --card-shadow:0 8px 24px rgba(15,23,42,0.07);
+    }
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#0f1724;
+      background:#f7f9fc;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .navbar-brand { font-weight:700; letter-spacing:0.2px; }
+    .hero {
+      min-height:66vh;
+      background: linear-gradient(135deg,var(--brand-1),var(--brand-2));
+      color:#fff;
+      display:flex;
+      align-items:center;
+      padding:80px 0;
+      border-bottom-left-radius:20px;
+      border-bottom-right-radius:20px;
+    }
+    .hero h1 { font-size:2.6rem; font-weight:800; }
+    .hero p { color:rgba(255,255,255,0.92); font-size:1.05rem; margin-top:0.7rem; margin-bottom:1.4rem; }
+
+    .btn-cta {
+      background:linear-gradient(90deg,rgba(255,255,255,0.12),rgba(255,255,255,0.06));
+      border:1px solid rgba(255,255,255,0.12);
+      color:#fff;
+      box-shadow:0 6px 18px rgba(13,110,253,0.12);
+    }
+
+    .section-title { font-weight:700; margin-bottom:1rem; color:#0f1724; }
+    .project-card { border:0; border-radius:12px; box-shadow:var(--card-shadow); transition:transform .18s ease; }
+    .project-card:hover { transform:translateY(-6px); }
+
+    .rotator, .testimonials { background:#fff; border-radius:12px; padding:18px; box-shadow:var(--card-shadow); }
+
+    footer { background:#0b1220; color:#d1d5db; padding:28px 0; margin-top:48px; }
+
+    @media(min-width:992px){
+      .hero h1 { font-size:3.2rem }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">CodeckHQ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tech">Tech</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- LEFT TEXT -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1>We build clean, modern, and scalable web solutions.</h1>
+          <p class="lead">
+            CodeckHQ builds full-stack web solutions powered by HTML, CSS, JavaScript, React, Bootstrap, PHP (Laravel), and MySQL 
+             blending beautiful interfaces with robust performance.
+          </p>
+          <div class="d-flex justify-content-center justify-content-lg-start gap-2 mt-3">
+            <a class="btn btn-lg btn-cta me-2" href="#projects">View My Work</a>
+            <a class="btn btn-lg btn-outline-light" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- RIGHT VISUAL -->
+        <div class="col-lg-5 text-center mt-5 mt-lg-0">
+          <div class="p-4" 
+              style="background: rgba(255,255,255,0.08);
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                      height: 100%;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            <img src="logo.png" alt="CodeckHQ Logo"
+                style="width:150px; height:auto; border-radius:10px; margin-bottom:0.8rem;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About CodeckHQ</h2>
+      <p class="text-muted">We specialise in delivering responsive, maintainable web apps from landing pages to full-featured dashboards. Comfortable with both front-end UI and server-side logic.</p>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded" style="box-shadow:var(--card-shadow)"><strong>Design</strong><p class="mb-0 text-muted">Intuitive UIs, accessibility, pixel polish.</p></div>
+        </div>
+        <div class="col-md-4 mt-3 mt-md-0">
+          <div class="p-4 bg-white rounded" style="box-shadow:var(--card-shadow)"><strong>Front-end</strong><p class="mb-0 text-muted">HTML, CSS, JavaScript, React, Bootstrap.</p></div>
+        </div>
+        <div class="col-md-4 mt-3 mt-md-0">
+          <div class="p-4 bg-white rounded" style="box-shadow:var(--card-shadow)"><strong>Back-end</strong><p class="mb-0 text-muted">PHP (Laravel-ready), MySQL, secure APIs.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="text-muted small">Responsive landing page for developers, performance-first, SEO-friendly.</p>
+              <a class="btn btn-sm btn-outline-primary" href="#">Live</a>
+              <a class="btn btn-sm btn-primary ms-2" href="#">Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Banking Dashboard</h5>
+              <p class="text-muted small">Secure admin dashboard (PHP / MySQL), user management and audit trails.</p>
+              <a class="btn btn-sm btn-outline-primary" href="#">Demo</a>
+              <a class="btn btn-sm btn-primary ms-2" href="#">Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Todo App</h5>
+              <p class="text-muted small">Lightweight task manager with local persistence and responsive UI.</p>
+              <a class="btn btn-sm btn-outline-primary" href="#">Live</a>
+              <a class="btn btn-sm btn-primary ms-2" href="#">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- React widgets -->
+      <div class="row g-4 mt-4">
+        <div class="col-lg-6">
+          <h3 class="h5 mb-3">Tech Stack</h3>
+          <div id="tech-rotator" class="rotator"></div>
+        </div>
+
+        <div class="col-lg-6">
+          <h3 class="h5 mb-3">What Clients Say</h3>
+          <div id="testimonials" class="testimonials"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="tech" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>HTML</strong></div></div>
+        <div class="col-sm-6 col-md-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>CSS</strong></div></div>
+        <div class="col-sm-6 col-md-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>JavaScript</strong></div></div>
+        <div class="col-sm-6 col-md-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>React</strong></div></div>
+        <div class="col-sm-6 col-md-3 mt-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>Bootstrap</strong></div></div>
+        <div class="col-sm-6 col-md-3 mt-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>PHP (Laravel)</strong></div></div>
+        <div class="col-sm-6 col-md-3 mt-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>MySQL</strong></div></div>
+        <div class="col-sm-6 col-md-3 mt-3"><div class="p-3 bg-white rounded text-center" style="box-shadow:var(--card-shadow)"><strong>Git</strong></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="text-muted">Have a project or idea? Drop a message let's build it.</p>
+      <div class="d-flex flex-column flex-sm-row gap-2">
+        <a id="btn-whatsapp" class="btn btn-success btn-lg" href="https://wa.me/+2347050402667" target="_blank" role="button">WhatsApp</a>
+        <a id="btn-email" class="btn btn-outline-primary btn-lg" href="mailto:codeckhq@gmail.com" target="_blank" role="button">Email</a>
+        <a id="btn-github" class="btn btn-dark btn-lg" href="https://github.com/codeck-HQ" target="_blank" role="button">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
+      <small>© <span id="year"></span> CodeckHQ • Built with care and proper coffee.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- React + Babel -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Main Script -->
+  <script type="text/babel">
+    document.querySelectorAll('.nav-link').forEach(link=>{
+      link.addEventListener('click',e=>{
+        e.preventDefault();
+        const t=document.querySelector(link.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+
+    const {useState,useEffect,useRef}=React;
+
+    // Tech Rotator
+    function TechRotator({items=[],interval=2500}) {
+      const [index,setIndex]=useState(0);
+      const timerRef=useRef(null);
+      useEffect(()=>{
+        start();return stop;
+      },[index]);
+      function start(){stop();timerRef.current=setTimeout(()=>setIndex(i=>(i+1)%items.length),interval);}
+      function stop(){if(timerRef.current)clearTimeout(timerRef.current);}
+      function prev(){stop();setIndex(i=>(i-1+items.length)%items.length);}
+      function next(){stop();setIndex(i=>(i+1)%items.length);}
+      if(!items.length)return null;
+      const current=items[index];
+      return(
+        <div onMouseEnter={stop} onMouseLeave={start} className="d-flex align-items-center justify-content-between">
+          <div style={{flex:"1"}}>
+            <div style={{fontSize:".85rem",color:"var(--muted)"}}>Primary</div>
+            <h5 style={{marginTop:"6px"}}>{current.name}</h5>
+            <p className="text-muted small mb-0">{current.desc}</p>
+            <div className="mt-2">
+              <small className="text-muted">Experience:</small>
+              <span className="badge bg-primary ms-2">{current.level}</span>
+            </div>
+          </div>
+          <div style={{width:"120px",textAlign:"center"}}>
+            <img src={current.logo} alt={current.name} style={{width:72,height:72,objectFit:"contain"}}/>
+            <div className="d-flex justify-content-center gap-2 mt-2">
+              <button className="btn btn-sm btn-outline-secondary" onClick={prev}>◀</button>
+              <button className="btn btn-sm btn-outline-secondary" onClick={next}>▶</button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const techItems=[
+      {name:"HTML5",desc:"Semantic markup & accessibility-first layouts",level:"Expert",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"},
+      {name:"CSS3",desc:"Responsive design, modern layouts & animations",level:"Expert",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"},
+      {name:"JavaScript",desc:"Vanilla JS, ES6+, DOM manipulation",level:"Familiar",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+      {name:"React",desc:"Component-driven UIs, hooks & state management",level:"Learning",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
+      {name:"Bootstrap",desc:"Rapid UI prototyping with Bootstrap 5",level:"Advanced",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"},
+      {name:"PHP (Laravel-ready)",desc:"Server-side logic; Laravel-ready architecture",level:"Advanced",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"},
+      {name:"MySQL",desc:"Relational DB design and queries",level:"Advanced",logo:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"}
+    ];
+
+    ReactDOM.createRoot(document.getElementById('tech-rotator')).render(<TechRotator items={techItems} interval={2800}/>);
+
+    // Testimonials - no images
+    function Testimonials({items=[],auto=true,interval=4000}) {
+      const [idx,setIdx]=useState(0);
+      const timerRef=useRef(null);
+      useEffect(()=>{
+        if(auto){timerRef.current=setInterval(()=>setIdx(i=>(i+1)%items.length),interval);}
+        return()=>clearInterval(timerRef.current);
+      },[]);
+      if(!items.length)return null;
+      const t=items[idx];
+      return(
+        <div onMouseEnter={()=>clearInterval(timerRef.current)} onMouseLeave={()=>{
+          if(auto)timerRef.current=setInterval(()=>setIdx(i=>(i+1)%items.length),interval);
+        }} style={{minHeight:160,display:"flex",alignItems:"center"}}>
+          <div style={{width:"100%"}}>
+            <blockquote className="mb-3 fst-italic" style={{fontSize:"1rem"}}>“{t.quote}”</blockquote>
+            <h6 className="fw-bold mb-0">{t.author}</h6>
+            <small className="text-muted">{t.role}</small>
+          </div>
+        </div>
+      );
+    }
+
+    const testimonialsData=[
+      {author:"Mrs. Chiamaka Eze",role:"Entrepreneur",quote:"CodeckHQ turned our concept into a full product launch in record time. Professional and trustworthy."},
+      {author:"Franklin Olu",role:"Software Engineer",quote:"They understand scalable architecture and clean code. Working with them felt like an in-house team."},
+      {author:"Munachi Okorie",role:"Creative Partner",quote:"Design-wise, they nailed our brand identity — sleek, modern, and distinctly African."},
+      {author:"Ada O.",role:"Product Manager",quote:"CodeckHQ delivered a beautiful, fast landing page — engagement jumped immediately."},
+      {author:"Ben T.",role:"Startup Founder",quote:"Reliable devs and solid communication. The dashboard is clean and stable."}
+    ];
+
+    ReactDOM.createRoot(document.getElementById('testimonials')).render(
+      <Testimonials items={testimonialsData} auto={true} interval={4200}/>
+    );
+  </script>
+</body>
+</html>
